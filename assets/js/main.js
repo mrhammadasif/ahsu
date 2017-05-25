@@ -79,10 +79,5 @@
     return false;
   });
 
-  $('.iphone-carousel').on('slid.bs.carousel', function () {
-    var carouselData = $(this).data('bs.carousel');
-    var currentIndex = carouselData.getActiveIndex();
-    $('.section-iphone-features .feature-block').removeClass('active');
-    $(".section-iphone-features").find("[data-slide-to='" + currentIndex + "']").addClass('active');
-  });
+
 })(jQuery);
